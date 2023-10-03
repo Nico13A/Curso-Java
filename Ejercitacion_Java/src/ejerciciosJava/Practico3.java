@@ -72,18 +72,18 @@ public class Practico3 {
 		System.out.println("Genere una clase que tenga los métodos para realizar la codificación y decodificación\r\n"
 				+ "de un string, dado un número de desplazamiento.");
 		String unaOracion = "hola que tal";
-	    //Transformar el string al codigo numero de la tabla ASCII.
-	    byte[] decodedBytes = unaOracion.getBytes();
-	    
-	    //Validar que puedo hacer revertible el array de bytes a un String.
-	    //System.out.println(new String(decodedBytes));
-	    for (int i=0; i<decodedBytes.length; i++) {
-	    	decodedBytes[i]++;
-	    }
-	    String otraOracion = new String(decodedBytes);
-	    System.out.println("Texto sin desplazo: " + unaOracion);
-	    System.out.println("Texto con desplazo 1: " + otraOracion);
-
+	    	//Transformar el string al codigo numero de la tabla ASCII.
+	   	byte[] decodedBytes = unaOracion.getBytes();
+		
+	    	//Validar que puedo hacer revertible el array de bytes a un String.
+	    	//System.out.println(new String(decodedBytes));
+	    	for (int i=0; i<decodedBytes.length; i++) {
+			decodedBytes[i]++;
+	    	}
+	    	String otraOracion = new String(decodedBytes);
+	    	System.out.println("Texto sin desplazo: " + unaOracion);
+	    	System.out.println("Texto con desplazo 1: " + otraOracion);
+		
 	}
 
 }
